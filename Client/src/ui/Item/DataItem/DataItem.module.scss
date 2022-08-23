@@ -1,0 +1,51 @@
+.data-item {
+  display: flex;
+  box-shadow: 0 1px 0 #091e4240;
+  // box-shadow: #091e4240 0px 1px 1px, #091e4240 0px 1px 1px;
+  // box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  width: 100%;
+  .item {
+    width: 100%;
+    display: flex;
+  }
+  .avatar {
+    pointer-events: none;
+    padding-top: 4px;
+  }
+  .lecturer-content {
+    padding: 10px;
+    display: flex;
+    flex: 0.97;
+  }
+  .group-content, .council-content {
+    padding: 10px;
+    flex: 0.97;
+  }
+  .lecturer-info {
+    padding-left: 10px;
+  }
+  .lecturer-content {
+    padding: 10px;
+    flex: 0.97;
+  }
+  .dropdown-icon {
+    flex: 0.03;
+  }
+  .group-name, .council-name {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .lecturer-name {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .lecturer-dep, .group-desc, .council-desc {
+    color: rgb(82, 82, 82);
+    font-size: 15px;
+  }
+  .details {
+    margin: 10px;
+  }
+}

@@ -1,0 +1,58 @@
+$mobile-width: 550px;
+$tablet-width: 900px;
+$laptop13-width: 1024px;
+$laptop15-width: 1524px;
+
+.register {
+    width: 100%;
+    min-height: 100%;
+    background: #f8fafb;
+    padding: 100px 300px;
+
+    @media screen and (max-width: $laptop15-width) {
+      padding: 50px 100px;
+    }
+
+    @media screen and (max-width: $mobile-width) {
+      padding: 50px 30px;
+    }
+
+
+    .register_left {
+      img{
+        width: 100%;
+      }
+    }
+  
+    .register_right {
+      .register_right_form {
+        width: 100%;
+      }
+  
+      h3 {
+        margin-bottom: 10px;
+      }
+  
+      p {
+        margin-bottom: 10px;
+      }
+  
+      .register_right_textbox {
+        width: 100%;
+        padding: 10px 0;
+      }
+  
+      .register_right_undertb {
+        width: 100%;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+  
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  

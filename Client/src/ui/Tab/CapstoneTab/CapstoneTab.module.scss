@@ -1,0 +1,19 @@
+$mobile-width: 550px;
+
+.topic-tab {
+    width: 350px;
+
+    
+
+    @media screen and (max-width: $mobile-width) {
+        width: 100%;
+    }
+
+    header {
+        border-radius: 3.5px;
+
+        button {
+            font-size: 12px !important;
+        }
+    }
+}

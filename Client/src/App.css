@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+/* 1280 609 */
+/* 1263 577 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    /* font-family: "Roboto", sans-serif !important; */
+    font-family: "Poppins", sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+}
+
+.App {
+    width: 100%;
+    height: 100%;
+}
+
+#root {
+    width: 100%;
+    height: 100vh;
+}
+
+/* .svg_color {
+    fill: black;
+} */
+
+.temp {
+    color: rgba(128, 128, 128, 0.164);
+}
+
+.default-box-shadow {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.ck.ck-dropdown__panel {
+    width: 400px !important;
+}
+
+.MuiTablePagination-displayedRows {
+    margin-bottom: 0;
+}
+
+.activity-notification_sidebar
+    .ck-editor__editable:not(.ck-editor__nested-editable) {
+    min-height: 400px;
+}
+
+.activity-notification .ck-editor__editable:not(.ck-editor__nested-editable) {
+    min-height: 400px;
+}
+
+.management-table .MuiDataGrid-virtualScrollerContent {
+    background: white;
+}
+
+.fixed-dark-bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 20;
+}
+
+.light-text {
+    color: #b3b3b3;
+}
+
+.main-navbar .light-text {
+    color: #b3b3b3e0;
+}
+
+.hlight-text {
+    color: #7f8fa6;
+}
+
+.bold-light-text {
+    color: #999;
+}
+
+.default-text {
+    color: #1976d2;
+}
+
+.sucess-text {
+    color: green;
+}
+
+.default-bg {
+    background: #1976d2 !important;
+}
+
+.light-bg {
+    background: #f1f5f9;
+}
+
+.error-text {
+    color: #e53935;
+}
+
+.light-border {
+    border: 1px solid #b3b3b3a1;
+}
+
+.llight-left-border {
+    border-left: 1px solid #b3b3b369;
+}
+
+.llight-right-border {
+    border-right: 1px solid #b3b3b369;
+}
+
+.llight-top-border {
+    border-top: 1px solid #b3b3b342;
+}
+
+.llight-bottom-border {
+    border-bottom: 1px solid #b3b3b342;
+}
+
+a {
+    color: inherit;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: inherit;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.main-navbar .active,
+.dark-mode .sidebar .base-link.active span, .dark-mode .sidebar .base-link.active svg {
+    color: white;
+}
+
+.default-mode .sidebar .active div {
+    background: #1976d2;
+    color: white;
+}
+
+.light-mode .sidebar .active div {
+    background: #f5f5f5;
+    color: black;
+}
+
+.red-mode .sidebar .active div {
+    background: #f44336;
+    color: white;
+}
+
+.green-mode .sidebar .active div {
+    background: #388e3c;
+    color: white;
+}
+
+.purple-mode .sidebar .active div {
+    background: #512da8;
+    color: white;
+}
+
+.orange-mode .sidebar .active div {
+    background: #ff5722;
+    color: white;
+}
+
+.dark-mode .sidebar .active div {
+    background: #181818;
+    color: white;
+}
+
+.advanced-table .MuiDataGrid-virtualScrollerRenderZone {
+    background-color: white;
+}
+
+.main-navbar header {
+    box-shadow: none !important;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+}
+
+.dark-bg {
+    background: rgba(0, 0, 0, 0.35) !important;
+}
+
+.ldark-bg {
+    background: rgba(0, 0, 0, 0.3) !important;
+}
+
+.dark-mode p,
+.dark-mode span,
+.dark-mode div {
+    color: white;
+}
+
+.dark-mode .main-navbar header,
+.dark-mode .sidebar nav,
+.dark-mode #nested-list-subheader {
+    background: #212121 !important;
+    /* background: #283142 !important; */
+}
+
+.dark-mode .sidebar span, .dark-mode .sidebar svg {
+    color: #666;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5 {
+    color: white !important;
+}
+
+.dark-mode .dashboard_right_page,
+.dark-mode .dashboard_body,
+.dark-mode .dashboard_header {
+    background: #181818 !important;
+    /* background: #1b2531 !important; */
+}
+
+.dark-mode .dashboard_right_page form {
+    background: #181818;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .dropdown-divider {
+    border-color: #555;
+}
+
+.dark-mode_container {
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    background: #212121 !important;
+}
+
+.light-mode .main-navbar_logo {
+    color: black !important;
+}
+
+.light-mode .active {
+    color: black !important;
+}
+
+.MuiBadge-anchorOriginTopRightRectangular {
+    color: white !important;
+}
+
+.color {
+    color: rgba(255, 255, 255, 0.568);
+}
+
+.test {
+    z-index: 5;
+}
+
+.fc {
+    height: 100%;
+}
+
+.task_active {
+    position: relative;
+    z-index: 5;
+}
+
+@media (max-width: 1500px) {
+    .activity-notification_sidebar
+        .ck-editor__editable:not(.ck-editor__nested-editable) {
+        min-height: 250px;
+    }
+}

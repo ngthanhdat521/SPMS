@@ -1,0 +1,21 @@
+$mobile-width: 550px;
+$tablet-width: 900px;
+$desktop-width: 1024px;
+
+.stage-board {
+  min-height: 80vh;
+  .stage-board_list-stage {
+    flex-wrap: wrap;
+    @media screen and (max-width: $tablet-width) {
+      width: 100%;
+      //display: block !important;
+    }
+    .stage-board_stage {
+      @media screen and (max-width: $tablet-width) {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 20px 0 !important;
+      }
+    }
+  }
+}

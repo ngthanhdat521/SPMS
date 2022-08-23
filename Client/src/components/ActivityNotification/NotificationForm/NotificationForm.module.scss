@@ -1,0 +1,29 @@
+$mobile-width: 550px;
+$tablet-width: 900px;
+$desktop-width: 1024px;
+$laptop15-width: 1524px;
+
+.notification-form{
+    width: 450px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    background: white;
+    border-top-left-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+
+    .notification-form_header{
+        color: white;
+    }
+
+    .notification-form_header,.notification-form_body,.notification-form_footer{
+        width: 100%;
+        padding: 20px;
+    }
+
+    @media screen and (max-width: $mobile-width) {
+        width: 90%;
+    }
+}

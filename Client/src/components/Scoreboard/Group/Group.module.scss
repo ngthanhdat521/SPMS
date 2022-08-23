@@ -1,0 +1,51 @@
+$mobile-width: 550px;
+$tablet-width: 900px;
+$desktop-width: 1024px;
+
+.group {
+  width: 224px;
+  height: 300px;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  padding: 20px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+
+  h5 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 13.5px;
+    // font-weight: 300;
+    color: #64748b;
+    margin: 0;
+  }
+
+  span {
+    font-size: 13.5px;
+  }
+
+  .group_line {
+    width: 50px;
+    height: 2px;
+    background: #64748b59;
+    margin: 20px 0;
+  }
+
+  .group_box {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    border-radius: 100%;
+  }
+
+  .group_icon {
+    font-size: 35px;
+    margin: auto;
+  }
+}
+
+.group:hover {
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+}

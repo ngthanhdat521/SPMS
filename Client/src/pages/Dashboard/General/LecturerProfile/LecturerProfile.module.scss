@@ -1,0 +1,14 @@
+.lecturer-profile{
+    width: 100%;
+    min-height: 100%;
+    padding: 100px 0;
+    background: #f1f5f9;
+    .lecturer-profile_container{
+        .lecturer-profile_email{
+            font-size: 14.5px;
+        }
+        .lecturer-profile_dep{
+            font-size: 12.5px;
+        }
+    }
+}

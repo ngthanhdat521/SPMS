@@ -1,0 +1,28 @@
+$tablet-width: 900px;
+$laptop15-width: 1524px;
+
+.group-management {
+    .group-management_btn-box {
+        display: flex;
+        justify-content: end;
+
+        @media screen and (max-width: $tablet-width) {
+            display: block;
+        }
+
+        @media screen and (max-width: $laptop15-width) {
+            button {
+                height: 48px;
+                font-size: 12px !important;
+            }
+        }
+
+        .group-management_btn-box_event {
+            margin-right: 10px;
+            @media screen and (max-width: $tablet-width) {
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+    }
+}

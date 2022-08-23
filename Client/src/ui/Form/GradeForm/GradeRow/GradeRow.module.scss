@@ -1,0 +1,76 @@
+$mobile-width: 600px;
+$tablet-width: 768px;
+$laptop-width: 922px;
+$desktop-width: 1250px;
+$large-width: 1550px;
+.grade-row{
+    width: 100%;
+    .grade-table{
+        width: 100%;
+        @media screen and (max-width: $desktop-width) {
+            width: 1500px;
+            overflow-x: scroll;
+        }
+        @media (min-width: $desktop-width) and (max-width: $large-width) {
+            td{
+                font-size: 15px ;
+            }
+            input[type = text]{
+                font-size: 15px;
+                padding: 8px 0px;
+                text-align: center;
+            }
+            .deliverable{
+                width: 15%;
+            }
+            .criteria{
+                width: 45%;
+            }
+            .team{
+                width: 10%;
+            }
+            .members{
+                width: 6%;
+            }
+            .faded{
+                width: 6%;
+            }
+        }
+    }
+    td{
+        border: 1px silver solid;
+        padding: 10px 7px;
+    }
+    .grade{
+        background-color: white;
+    }
+    .avg-grade{
+        background-color: #e9ecef;
+    }
+    .deliverable{
+        width: 15%;
+    }
+    .criteria{
+        width: 45%;
+    }
+    .short-name{
+        font-weight: bold;
+    }
+    .team{
+        width: 15%;
+        text-align: center;
+        font-weight: bold;
+    }
+    .members{
+        width: 5%;
+        text-align: center;
+        font-weight: bold;
+    }
+    .faded{
+        width: 5%;
+        background-color: #e9ecef;
+    }
+    input[type = text]{
+        text-align: center;
+    }
+}

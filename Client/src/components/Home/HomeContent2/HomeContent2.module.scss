@@ -1,0 +1,22 @@
+.home-content{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .home-content_left{
+        .content-image{
+            width: 500px;
+        }
+    }
+    .home-content_right{
+        h1{
+            color: black;
+        }
+        p{
+            color: #66615b;
+        }
+    }
+}

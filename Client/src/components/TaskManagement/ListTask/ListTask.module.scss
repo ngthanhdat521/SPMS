@@ -1,0 +1,45 @@
+$mobile-width: 550px;
+$tablet-width: 900px;
+$desktop-width: 1024px;
+
+.list-task {
+  width: 300px;
+  @media screen and (max-width: $tablet-width) {
+    width: 270px;
+  }
+
+  @media screen and (max-width: $mobile-width) {
+    width: 300px;
+  }
+
+  .list-task_header {
+    .list-task_header_number {
+      width: 24px;
+      height: 24px;
+      background: #cbd5e1;
+      font-size: 0.9rem;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #64748b;
+    }
+
+    .list-task_header_title {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+
+  .list-task_body {
+    background: #e6ebf2;
+    padding: 13px;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+
+  .list-task_task_active {
+    z-index: 5;
+  }
+
+}

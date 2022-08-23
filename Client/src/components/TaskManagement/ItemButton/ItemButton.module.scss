@@ -1,0 +1,23 @@
+.item-button {
+  width: 100%;
+  padding: 13px;
+  background: #e6ebf2;
+  border-radius: 10px;
+  cursor: pointer;
+  span {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  span,
+  svg {
+    color: #64748b;
+  }
+
+  button{
+      border-radius: 25px;
+  }
+}
+
+.item-button:hover {
+  background: rgba(128, 128, 128, 0.15);
+}

@@ -1,0 +1,66 @@
+.assign-review{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .selected-mentor, .selected-groups{
+        font-weight: bold;
+    }
+    .item{
+      width: 100%;
+      background-color: white;
+    }
+    .item :hover{
+      cursor: pointer;
+      background: #e9ecef;
+    }
+    .mentors-container{
+        width: 30%;
+        max-height: 255px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 10px;
+        overflow-y: scroll;
+    }
+    .plus-icon{
+      display: flex;
+      align-items: center;
+      padding: 10px;
+    }
+    .groups-container{
+        width: 30%;
+        max-height: 255px;
+        box-sizing: border-box;
+        padding: 10px;
+        overflow-y: scroll;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .review-label{
+      font-weight: bold;
+      text-align: center;
+    }
+}
+/* width */
+.mentors-container::-webkit-scrollbar, .groups-container::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .mentors-container::-webkit-scrollbar-track, .groups-container::-webkit-scrollbar-track {
+    background: #f1f5f9;
+  }
+  
+  /* Handle */
+  .mentors-container::-webkit-scrollbar-thumb, .groups-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  .mentors-container::-webkit-scrollbar-thumb:hover, .groups-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

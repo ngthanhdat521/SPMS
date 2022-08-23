@@ -1,0 +1,19 @@
+$laptop15-height: 700px;
+$mobile-width: 550px;
+
+.body{
+    width: 100%;
+    height: 92%;
+    min-height: 92%;
+    background: #f1f5f9;
+
+    @media screen and (max-height: $laptop15-height) {
+        height: 88%;
+        min-height: 88%;
+    }
+
+    @media screen and (max-width: $mobile-width) {
+        height: 88%;
+        min-height: 88%;
+    }
+}

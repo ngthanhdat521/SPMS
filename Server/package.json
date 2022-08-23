@@ -1,0 +1,42 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --experimental-modules --es-module-specifier-resolution=node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dphuoc432000/Capstone-Management-System.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dphuoc432000/Capstone-Management-System/issues"
+  },
+  "homepage": "https://github.com/dphuoc432000/Capstone-Management-System#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "email-validator": "^2.0.4",
+    "exceljs": "^4.3.0",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.4",
+    "nodemailer": "^6.7.2",
+    "pg": "^8.7.3",
+    "sequelize": "^6.17.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15"
+  },
+  "keywords": [],
+  "description": ""
+}

@@ -1,0 +1,26 @@
+$mobile-width: 550px;
+
+.sample-document {
+    width: 100%;
+    height: 100%;
+    .sample-document_container {
+        width: 100%;
+        min-height: 100%;
+        padding: 50px;
+        background: #f1f5f9;
+
+        @media screen and (max-width: $mobile-width) {
+            padding: 15px;
+
+            button{
+                font-size: 10.5px !important;
+                margin-right: 5px !important;
+            }
+        }
+
+        .sample-document_container_list {
+            width: 100%;
+            flex-wrap: wrap;
+        }
+    }
+}

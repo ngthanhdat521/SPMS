@@ -1,0 +1,25 @@
+$mobile-width: 550px;
+
+.fixed-form {
+    form {
+        width: 500px;
+        max-height: 600px;
+        overflow-y: auto;
+        padding: 30px;
+        background: white;
+        border-radius: 5px;
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.4);
+        position: relative;
+
+        @media screen and (max-width:$mobile-width) {
+            width: 90%;
+            max-height: 400px;
+        }
+        .fixed-form_close {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            cursor: pointer;
+        }
+    }
+}

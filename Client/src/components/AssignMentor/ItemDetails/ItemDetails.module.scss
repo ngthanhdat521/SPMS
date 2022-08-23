@@ -1,0 +1,17 @@
+.item-details{
+    width: 100%;
+    background-color: white;
+    pointer-events: none;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px silver solid;
+    .info{
+        display: flex;
+    }
+    .label-container{
+        width: 60px;
+    }
+    .info-label{
+        font-weight: bold;
+    }
+}

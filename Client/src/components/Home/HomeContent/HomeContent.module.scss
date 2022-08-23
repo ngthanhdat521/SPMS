@@ -1,0 +1,70 @@
+.home-content {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .home-content_left {
+    opacity: 0;
+    .content-image {
+      width: 60%;
+    }
+  }
+  .home-content_right {
+    opacity: 0;
+    h1 {
+      color: black;
+    }
+    p {
+      color: #66615b;
+    }
+  }
+}
+@mixin animate($animation, $duration, $method, $times) {
+  animation: $animation $duration $method $times forwards;
+}
+
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+.leftToRight {
+  @include keyframes(leftToRight) {
+    0% {
+      transform: translateX(50px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateX(25px);
+      opacity: 0.5 !important;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1 !important;
+    }
+  }
+  @include animate(leftToRight, 1s, linear, 1);
+  opacity: 1 !important;
+}
+.rightToLeft {
+    @include keyframes(rightToLeft) {
+      0% {
+        transform: translateX(-50px);
+        opacity: 0;
+      }
+      50% {
+        transform: translateX(-25px);
+        opacity: 0.5 !important;
+      }
+      100% {
+        transform: translateX(0px);
+        opacity: 1 !important;
+      }
+    }
+    @include animate(rightToLeft, 1s, linear, 1);
+    opacity: 1 !important;
+  }

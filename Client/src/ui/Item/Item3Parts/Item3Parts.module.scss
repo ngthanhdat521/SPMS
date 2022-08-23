@@ -1,0 +1,21 @@
+$mobile-width: 550px;
+$small-tablet-width: 780px;
+$tablet-width: 900px;
+$desktop-width: 1024px;
+$laptop15-width: 1524px;
+
+.item-3parts {
+    width: 33%;
+    padding: 10px;
+    @media screen and (max-width: $laptop15-width) {
+        width: 50%;
+    }
+
+    @media screen and (max-width: $small-tablet-width) {
+        width: 100%;
+    }
+
+    @media screen and (max-width: $mobile-width) {
+        width: 100%;
+    }
+}

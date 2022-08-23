@@ -1,0 +1,21 @@
+$mobile-width: 550px;
+$tablet-width: 900px;
+$desktop-width: 1024px;
+$laptop15-width: 1524px;
+
+.sample-topic {
+    width: 100%;
+    min-height: 100%;
+
+    .sample-topic_tab {
+        width: 350px;
+        margin-left: auto;
+        @media screen and (max-width: $mobile-width) {
+            width: 100%;
+        }
+    }
+
+    input{
+        width: 200px;
+    }
+}

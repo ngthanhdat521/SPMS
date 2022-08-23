@@ -1,0 +1,51 @@
+$mobile-width: 600px;
+$tablet-width: 768px;
+$laptop-width: 922px;
+$desktop-width: 1250px;
+$large-width: 1550px;
+
+.two-box{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    .first-box, .second-box{
+        width: 30%;
+    }
+    .transfer-icon {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+    @media screen and (max-width: $mobile-width) {
+        display: block;
+        .first-box, .second-box{
+          width: 100%;
+        }
+        .transfer-icon {
+          justify-content: center;
+          padding: 10px 0px;
+        }
+      }
+    @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+        .first-box, .second-box {
+          width: 50%;
+        }
+      }
+      @media (min-width: $tablet-width) and (max-width: $laptop-width) {
+        .first-box, .second-box {
+          width: 45%;
+        }
+      }
+      @media (min-width: $laptop-width) and (max-width: $desktop-width) {
+        .first-box, .second-box {
+          width: 40%;
+        }
+      }
+      @media (min-width: $desktop-width) and (max-width: $large-width) {
+        .first-box, .second-box {
+          width: 35%;
+        }
+      }
+}

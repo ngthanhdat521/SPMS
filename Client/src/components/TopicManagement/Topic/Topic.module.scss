@@ -1,0 +1,68 @@
+$mobile-width: 550px;
+$tablet-width: 900px;
+$desktop-width: 1024px;
+$laptop15-width: 1524px;
+
+.topic {
+    width: 100%;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+    h3{
+        @media screen and (max-width: $laptop15-width) {
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: $desktop-width) {
+            font-size: 17px;
+        }
+    }
+
+    .topic_title {
+        font-size: 15px;
+        
+    }
+
+    .topic_desc {
+        height: 55px;
+        font-size: 13px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+
+    .topic_icon {
+        font-size: 18px;
+    }
+
+    .topic_sub {
+        font-size: 13px;
+    }
+
+    .dropdown-menu{
+        width: 250px;
+    }
+
+    .topic_file {
+        display: flex;
+        align-items: center;
+
+        .topic_file_icon {
+            display: flex;
+            width: 18px;
+            margin-right: 10px;
+            align-items: center;
+        }
+        
+        p{
+            font-size: 13px;
+            color: #333;
+            margin-bottom: 0;
+            cursor: pointer;
+        }
+    }
+}

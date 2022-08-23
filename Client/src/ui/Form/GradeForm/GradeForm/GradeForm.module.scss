@@ -1,0 +1,64 @@
+$mobile-width: 600px;
+$tablet-width: 768px;
+$laptop-width: 922px;
+$desktop-width: 1250px;
+$large-width: 1550px;
+
+.grade-form {
+  width: 100%;
+  @media screen and (max-width: $desktop-width) {
+    width: 1500px;
+    overflow-x: scroll;
+    font-size: 12px;
+    }
+  .table {
+    width: 100%;
+    @media (min-width: $desktop-width) and (max-width: $large-width) {
+        width: 100%;
+        font-size: 14px;
+        .deliverable{
+            width: 15%;
+        }
+        .criteria{
+            width: 45%;
+        }
+        .team{
+            width: 10%;
+        }
+        .final-grade{
+            width: 60%;
+        }
+        .members {
+            width: 30%;
+        }
+        .member{
+            width: 6%;
+        }
+    }
+  }
+  th {
+    border: 1px silver solid;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .deliverable {
+    width: 15%;
+  }
+  .criteria {
+    width: 45%;
+  }
+  .team {
+    width: 15%;
+  }
+  .members {
+    width: 25%;
+  }
+  .member {
+    width: 5%;
+  }
+  .final-grade {
+    width: 60%;
+  }
+}

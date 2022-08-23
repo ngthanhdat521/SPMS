@@ -1,0 +1,19 @@
+$mobile-width: 550px;
+$desktop-width: 1024px;
+
+.contribution-report {
+    width: 100%;
+    .contribution-report_container {
+        width: 100%;
+        padding: 30px;
+        display: flex;
+
+        @media screen and (max-width: $desktop-width) {
+            padding: 20px;
+        }
+
+        @media screen and (max-width: $mobile-width) {
+            display: block;
+        }
+    }
+}

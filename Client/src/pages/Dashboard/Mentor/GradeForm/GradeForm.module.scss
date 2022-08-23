@@ -1,0 +1,124 @@
+$mobile-width: 600px;
+$tablet-width: 768px;
+$laptop-width: 922px;
+$desktop-width: 1250px;
+$large-width: 1550px;
+
+.grade-form-page {
+  width: 100%;
+  .uni-title {
+    color: #d82c2c;
+    font-weight: bold;
+  }
+  .grade-form-header {
+    display: flex;
+    margin-bottom: 20px;
+    @media screen and (max-width: $mobile-width) {
+        display: block;
+        width: 100%;
+        .council-combobox{
+            h4{
+                font-size: 22px;
+            }
+            h5{
+                font-size: 18px;
+            }
+        }
+        .grade-info{
+            font-size: 11px;
+        }
+    }
+    @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+        display: block;
+        width: 100%;
+        .council-combobox{
+            h4{
+                font-size: 22px;
+            }
+            h5{
+                font-size: 18px;
+            }
+        }
+        .grade-info{
+            font-size: 12px;
+        }
+    }
+    @media (min-width: $tablet-width) and (max-width: $laptop-width) {
+        display: block;
+        width: 100%;
+        .council-combobox{
+            h4{
+                font-size: 22px;
+            }
+            h5{
+                font-size: 18px;
+            }
+        }
+        .grade-info{
+            font-size: 14px;
+        }
+    }
+    @media (min-width: $laptop-width) and (max-width: $desktop-width) {
+        .council-combobox{
+            flex: 0.3;
+            h4{
+                font-size: 18px;
+            }
+            h5{
+                font-size: 14px;
+            }
+        }
+        .grade-info{
+            flex: 0.7;
+            font-size: 12px;
+        }
+    }
+    @media (min-width: $desktop-width) and (max-width: $large-width) {
+        .council-combobox{
+            flex: 0.35;
+            h4{
+                font-size: 22px;
+            }
+            h5{
+                font-size: 18px;
+            }
+        }
+        .grade-info{
+            flex: 0.65;
+            font-size: 14px;
+        }
+    }
+  }
+  .council-combobox,
+  .grade-info {
+    flex: 0.5;
+  }
+  .council-combobox {
+    box-sizing: border-box;
+    width: 100%;
+    .combobox {
+      text-align: center;
+      padding-top: 25px;
+      .auto-complete-container {
+        display: flex;
+        justify-content: center;
+        padding-top: 5px;
+      }
+      .auto-complete {
+        background-color: white;
+      }
+      .auto-complete-container :hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .button-container {
+    width: 100%;
+    padding-top: 20px;
+    text-align: right;
+    .submit-button {
+      height: 40px;
+      width: 15%;
+    }
+  }
+}

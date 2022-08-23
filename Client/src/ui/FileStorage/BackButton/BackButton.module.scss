@@ -1,0 +1,25 @@
+$mobile-width: 550px;
+
+.back-button {
+    margin: auto;
+    text-align: center;
+    width: 180px;
+    height: 200px;
+    cursor: pointer;
+    background: white;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+
+    @media screen and (max-width: $mobile-width) {
+        width: 140px;
+        height: 160px;
+    }
+
+    .back-button_back-icon{
+        font-size: 20px;
+    }
+
+    .back-button_dot-icon{
+        font-size: 20px;
+    }
+}

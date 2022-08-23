@@ -1,0 +1,26 @@
+$mobile-width: 550px;
+$tablet-width: 900px;
+$desktop-width: 1024px;
+$laptop15-height: 700px;
+
+.header {
+    width: 100%;
+    background: white;
+    height: 8%;
+    padding: 20px 30px;
+    @media screen and (max-width: $mobile-width) {
+        height: 12%;
+    }
+
+    @media screen and (max-height: $laptop15-height) {
+        height: 12%;
+    }
+
+    h5 {
+        margin: 0;
+
+        @media screen and (max-width: $mobile-width) {
+            font-size: 14px;
+        }
+    }
+}

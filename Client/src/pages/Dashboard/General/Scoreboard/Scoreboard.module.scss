@@ -1,0 +1,72 @@
+$mobile-width: 550px;
+$tablet-width: 900px;
+$desktop-width: 1024px;
+$laptop15-width: 1524px;
+
+.score-board {
+    width: 100%;
+    min-height: 100%;
+    .score-board_body {
+        padding: 50px 100px;
+
+        @media screen and (max-width: $laptop15-width) {
+            padding: 30px 60px;
+        }
+
+        @media screen and (max-width: $mobile-width) {
+            padding: 20px 30px;
+        }
+
+        .score-board_table {
+            position: relative;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            // border: 3px solid rgba(128, 128, 128, 0.1);
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .score-board_table_s {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .score-board_table_m {
+            table {
+                @media screen and (max-width: $laptop15-width) {
+                    width: 100%;
+                }
+            }
+
+            @media screen and (max-width: $laptop15-width) {
+                width: 100%;
+                overflow-x: auto;
+            }
+        }
+
+        table {
+            background: white;
+            thead {
+                th {
+                    color: white;
+                }
+            }
+        }
+
+        th {
+            vertical-align: middle;
+            // text-align:center;
+        }
+
+        .score-board_members {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .score-board_group {
+            display: flex;
+            flex-wrap: wrap;
+            // justify-content: center;
+        }
+    }
+}

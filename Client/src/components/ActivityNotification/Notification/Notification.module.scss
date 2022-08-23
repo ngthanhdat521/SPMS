@@ -1,0 +1,34 @@
+.notification {
+    width: 100%;
+    background: white;
+    padding: 20px;
+    .notification_title {
+        h5 {
+            font-size: 18px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+        }
+    }
+    .notification_content {
+        // height: 80px;
+        font-size: 13.5px;
+        line-height: 1.3;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        margin: 10px 0;
+    }
+    .notification_content div,.notification_content p,.notification_content span,.notification_content strong {
+        color: #333 !important;
+        margin: 0;
+        font-weight: 400;
+    }
+    .notification_time span {
+        font-size: 12px;
+    }
+}

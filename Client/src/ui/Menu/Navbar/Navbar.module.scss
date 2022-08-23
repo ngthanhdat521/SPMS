@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+$mobile-width: 550px;
+$tablet-width: 900px;
+$laptop13-width: 1024px;
+$laptop15-width: 1524px;
+
+.navbar {
+    .navbar_dropdown-menu {
+        width: 400px;
+        max-height: 500px;
+        overflow-y: auto;
+    }
+    .navbar_box {
+        @media screen and (max-width: $mobile-width) {
+            padding: 0 10px !important;
+        }
+    }
+
+    button{
+        @media screen and (max-width: $mobile-width) {
+            padding-left: 6px;
+            padding-right: 6px;
+        }
+    }
+
+    .navbar_logo {
+        height: 100% !important;
+        color: white;
+        font-size: 2rem !important;
+        font-weight: 900 !important;
+        font-family: "Permanent Marker", cursive !important;
+        margin: 0;
+
+        @media screen and (max-width: $mobile-width) {
+            font-size: 23px !important;
+        }
+    }
+
+    .navbar_color-mode {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        div {
+            width: 30px;
+            height: 30px;
+        }
+        .navbar_color-mode_sub {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .navbar_color-mode_light{
+            background: rgba(128, 128, 128, 0.2);
+        }
+    }
+}
+
+.navbar_info-bar {
+    width: 300px;
+    h5 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 14px;
+    }
+    p,
+    span,
+    svg {
+        color: #64748b !important;
+    }
+
+    svg {
+        margin-right: 10px;
+    }
+    
+}

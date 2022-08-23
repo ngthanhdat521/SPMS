@@ -1,0 +1,49 @@
+$mobile-width: 550px;
+$tablet-width: 900px;
+$desktop-width: 1024px;
+$latop15-width: 1524px;
+
+.task-detail {
+  width: 640px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  max-height: 800px;
+  overflow-y: auto;
+
+  @media screen and (max-width: $latop15-width) {
+    max-height: 500px;
+  }
+
+  @media screen and (max-width: $mobile-width) {
+    width: 300px;
+    max-height: 400px;
+  }
+
+  .task-detail_header {
+    width: 100%;
+    padding: 20px;
+    color: white;
+    svg{
+      cursor: pointer;
+      font-size: 22px;
+    }
+
+    @media screen and (max-width: $mobile-width) {
+      padding: 10px;
+    }
+  }
+
+  .task-detail_body{
+      padding: 35px;
+      .task-detail_body_activity{
+        svg,h5{
+          font-size: 20px;
+        }
+      }
+
+      @media screen and (max-width: $mobile-width) {
+        padding: 20px;
+      }
+  }
+}

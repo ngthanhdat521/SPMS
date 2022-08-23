@@ -1,0 +1,36 @@
+$mobile-width: 550px;
+$tablet-width: 900px;
+$desktop-width: 1024px;
+$laptop15-width: 1524px;
+$laptop14-height: 700px;
+
+.introduction {
+    height: 100%;
+    padding: 50px 350px;
+    background: white;
+
+    @media screen and (max-width: $laptop15-width) {
+        padding: 40px 150px;
+    }
+
+    @media screen and (max-width: $laptop14-height) {
+        height: auto;
+    }
+
+    @media screen and (max-width: $desktop-width) {
+        padding: 40px 80px;
+    }
+
+    @media screen and (max-width: $mobile-width) {
+        padding: 20px 30px;
+    }
+
+    p {
+        font-size: 14.5px;
+        line-height: 1.7;
+    }
+    img {
+        width: 780px;
+        height: 300px;
+    }
+}

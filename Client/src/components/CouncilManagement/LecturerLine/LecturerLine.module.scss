@@ -1,0 +1,38 @@
+.lecturer-line-component{
+  .lecturer-line {
+    display: flex;
+    border: 1px silver solid;
+    border-radius: 5px 5px 0px 0px;
+    box-sizing: border-box;
+    .line {
+      width: 100%;
+      padding: 10px;
+      display: flex;
+      p {
+        margin-bottom: 0 !important;
+      }
+      .avatar {
+        pointer-events: none;
+        padding-top: 4px;
+      }
+      .lecturer-info {
+        padding-left: 10px;
+        .name {
+          font-weight: bold;
+        }
+      }
+      .depName{
+        color: rgb(82, 82, 82);
+        font-size: 15px;
+      }
+    }
+    .role-selection{
+        padding: 10px;
+    }
+  }
+  // .work-unit{
+  //   pointer-events: none;
+  //   width: 100%;
+  //   background-color: white;
+  // }
+}

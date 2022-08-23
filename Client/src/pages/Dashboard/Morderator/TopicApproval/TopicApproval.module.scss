@@ -1,0 +1,33 @@
+$mobile-width: 550px;
+$tablet-width: 900px;
+$desktop-width: 1024px;
+$laptop15-width: 1524px;
+
+.topic-approval {
+    width: 100%;
+    min-height: 100%;
+
+    .topic-approval_tab {
+        width: 400px;
+        margin-left: auto;
+        @media screen and (max-width: $mobile-width) {
+            width: 100%;
+        }
+    }
+
+    .topic-approval_list {
+        flex-wrap: wrap;
+
+        .topic-approval_item {
+            width: 33%;
+            @media screen and (max-width: $laptop15-width) {
+                width: 50%;
+                padding: 10px;
+            }
+
+            @media screen and (max-width: $mobile-width) {
+                width: 100%;
+            }
+        }
+    }
+}

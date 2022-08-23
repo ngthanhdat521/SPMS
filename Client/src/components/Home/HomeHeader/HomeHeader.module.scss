@@ -1,0 +1,50 @@
+.home-header {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  .home-header_left{
+    text-align: center;
+    h1{
+      color: black;
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    p{
+      color: #66615b;
+    }
+  }
+  .home-header_right {
+    .home-image{
+      width: 500px;
+    }
+  }
+}
+@mixin animate($animation,$duration,$method,$times){
+  animation: $animation $duration $method $times;
+}
+
+@mixin keyframes($name){
+  @keyframes #{$name}{
+      @content;
+  }
+}
+
+.appearance{ 
+ @include keyframes(appearance){
+    0%{
+    opacity: 0;
+    }
+   50%{
+    opacity: 0.5;
+    }
+   100%{
+    opacity: 1;
+   }
+  }
+@include animate(appearance, 2s, linear, 1);
+}

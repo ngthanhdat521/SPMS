@@ -1,0 +1,13 @@
+$mobile-width: 550px;
+
+.list-group{
+    width: 100%;
+    min-height: 100%;
+
+    .list-group_tab
+    {
+        @media screen and (max-width: $mobile-width) {
+            width: 100%;
+        }
+    }
+}

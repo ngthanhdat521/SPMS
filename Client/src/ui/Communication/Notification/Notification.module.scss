@@ -1,0 +1,30 @@
+.notification {
+    width: 100%;
+    .notification_name {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .notification_time {
+        font-size: 12px;
+        color: #777;
+    }
+
+    .notification_action {
+        width: 100%;
+        font-size: 13px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        p,span,strong {
+            color: black !important;
+            font-weight: 400 !important;
+        }
+    }
+
+    p{
+        width: 100%;
+    }
+}

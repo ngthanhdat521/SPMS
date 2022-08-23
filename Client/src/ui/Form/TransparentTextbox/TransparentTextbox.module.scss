@@ -1,0 +1,15 @@
+.transparent-textbox{
+    position: relative;
+    
+    span{
+        cursor: pointer;
+    }
+
+    svg{
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+}

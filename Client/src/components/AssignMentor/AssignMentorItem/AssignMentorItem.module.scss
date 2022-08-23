@@ -1,0 +1,45 @@
+.assign-mentor-item{
+    display: flex;
+    border: 1px silver solid;
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 100%;
+        .item{
+            width: 100%;
+            display: flex;
+        }
+        .avatar{
+            pointer-events: none;
+            padding-top: 4px;
+        }
+        .mentor-content{
+            padding: 10px;
+            display: flex;
+            flex: 0.97;
+        }
+        .mentor-info{
+            padding-left: 10px;
+        }
+        .group-content{
+            padding: 10px;
+            flex: 0.97;
+        }
+        .dropdown-icon{
+            flex: 0.03;
+        }
+    .group-name{
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .mentor-name{
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .note{
+        color: rgb(82, 82, 82);
+        font-size: 15px;
+    }
+    .details{
+        margin: 10px;
+    }
+}

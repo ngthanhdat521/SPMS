@@ -1,0 +1,22 @@
+$tablet-width: 900px;
+
+.council-management {
+    .council-management_btn-box {
+        display: flex;
+        justify-content: end;
+        @media screen and (max-width: $tablet-width) {
+            display: block;
+        }
+
+        .council-management_btn-box_event {
+            margin-right: 10px;
+            @media screen and (max-width: $tablet-width) {
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+    }
+    button{
+        height: 48px;
+    }
+}

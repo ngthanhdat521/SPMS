@@ -1,0 +1,13 @@
+.group-details{
+    width: 100%;
+    border: 1px silver solid;
+    background-color: white;
+    pointer-events: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 5px;
+    .details-label{
+        font-weight: bold;
+    }
+}

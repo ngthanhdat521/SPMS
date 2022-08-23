@@ -1,0 +1,28 @@
+.student-item {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px silver solid;
+    border-radius: 5px;
+
+    .avatar {
+        padding-top: 4px;
+        pointer-events: none !important;
+    }
+
+    .item-content{
+        width: 100%;
+        padding-left: 10px;
+    }
+    .item-header{
+        width: 100%;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .stucode {
+        color: rgb(82, 82, 82);
+    }
+}

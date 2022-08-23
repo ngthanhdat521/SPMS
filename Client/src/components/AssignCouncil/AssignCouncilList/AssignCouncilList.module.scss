@@ -1,0 +1,19 @@
+.assign-council-list {
+  width: 100%;
+  height: 100%;
+  .selected{
+    background-color: #d3d3d3 !important;
+    border-radius: 5px;
+  }
+  .selected :hover{
+    cursor: pointer;
+    background-color: #d3d3d3 !important;
+  }
+  .item{
+    background-color: white;
+  }
+  .item :hover {
+    cursor: pointer;
+    background: #e9ecef;
+  }
+}

@@ -1,0 +1,45 @@
+$mobile-width: 550px;
+$tablet-width: 900px;
+$desktop-width: 1024px;
+$laptop15-width: 1524px;
+
+.stage-report {
+    width: 50%;
+    padding: 20px 50px;
+    .stage-report_info{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    span{
+        font-size: 13px;
+    }
+
+    .stage-report_container {
+        width: 100%;
+        padding: 50px 70px;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        background: white;
+
+        @media screen and (max-width: $laptop15-width) {
+            padding: 15px 20px;
+        }
+
+        @media screen and (max-width: $mobile-width) {
+            padding: 20px 10px;
+        }
+    }
+
+    @media screen and (max-width: $mobile-width) {
+        width: 100%;
+    }
+
+    @media screen and (max-width: $desktop-width) {
+        padding: 5px 15px !important;
+    }
+}

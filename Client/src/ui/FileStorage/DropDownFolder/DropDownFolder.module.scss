@@ -1,0 +1,19 @@
+.dropdown-folder{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    button{
+        height: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .dropdown-folder_menu_icon {
+        color: #666;
+    }
+
+    .dropdown-folder_menu_icon span{
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,19 @@
+.group-item{
+    .member-line, .mentor-line{
+        display: flex;
+        margin-top: 5px;
+    }
+    .info{
+        padding-left: 5px;
+        .name{
+            font-weight: bold;
+        }
+    }
+    .avatar{
+        padding: 4px;
+        pointer-events: none;
+    }
+    p{
+        margin-bottom: 0;
+    }
+}

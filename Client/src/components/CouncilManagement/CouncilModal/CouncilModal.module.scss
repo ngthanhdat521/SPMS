@@ -1,0 +1,42 @@
+.council-modal-container{
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .council-modal{
+        width: 40%;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        border-radius: 5px;
+        padding: 20px;
+        background-color: white;
+        .modal-footer{
+            display: flex;
+            justify-content: flex-end;
+            .location, .time{
+                padding: 10px;
+            }
+        }
+    }
+    .modal{
+        display: flex;
+        justify-content: center;
+        .modal-item{
+            padding: 0px 5px;
+            flex: 1;
+            .members{
+                color: #555;
+                margin-bottom: 0;
+                border-bottom: 1px solid #091e4240;
+            }
+        }
+        .close-button{
+            cursor: pointer;
+        }
+    }
+}

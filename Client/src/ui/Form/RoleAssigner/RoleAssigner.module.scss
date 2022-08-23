@@ -1,0 +1,12 @@
+.role-assigner{
+    width: 100%;
+    .form-select{
+        background: transparent;
+        border: none;
+        font-size: 15px;
+        font-style: italic;
+    }
+    .form-select-selected ::after{
+        background-color: black;
+    }
+}

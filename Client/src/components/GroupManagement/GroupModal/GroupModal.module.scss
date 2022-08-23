@@ -1,0 +1,78 @@
+.group-modal-container{
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    .group-modal{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .modal{
+        width: 600px;
+        height: 500px;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        border-radius: 5px;
+        padding: 20px;
+        background-color: white;
+
+        .modal-header{
+            display: flex;
+            justify-content: space-between;
+        }
+        .close-button{
+            cursor: pointer;
+        }
+    }
+    .modal-list{
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .member-list, .mentor-list{
+            width: 250px;
+            height: 300px;
+            // overflow-y: scroll;
+            // overflow-x: hidden;
+        }
+        .list-title{
+            border-bottom: 2px black solid;
+            p{
+                font-size: 16px;
+                color: #555;
+            }
+        }
+        p{
+            margin-bottom: 0;
+        }
+        .item-line :hover{
+            cursor: pointer;
+            background: #e9ecef;
+        }
+    }
+//   /* width */
+//   .member-list::-webkit-scrollbar, .mentor-list::-webkit-scrollbar {
+//     width: 5px;
+//   }
+  
+//   /* Track */
+//   .member-list::-webkit-scrollbar-track, .mentor-list::-webkit-scrollbar-track {
+//     background: white;
+//   }
+  
+//   /* Handle */
+//   .member-list::-webkit-scrollbar-thumb, .mentor-list::-webkit-scrollbar-thumb {
+//     background: #888;
+//     border-radius: 5px;
+//   }
+  
+//   /* Handle on hover */
+//   .member-list::-webkit-scrollbar-thumb:hover, .mentor-list::-webkit-scrollbar-thumb {
+//     background: #555;
+//   }
+}

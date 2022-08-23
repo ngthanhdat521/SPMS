@@ -1,0 +1,11 @@
+$mobile-width: 550px;
+
+.basic-box {
+    width: 100%;
+    display: block;
+    padding: 50px;
+
+    @media screen and (max-width: $mobile-width) {
+        padding: 10px;
+    }
+}

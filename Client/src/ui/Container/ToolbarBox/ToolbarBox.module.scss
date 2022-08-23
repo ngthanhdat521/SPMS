@@ -1,0 +1,12 @@
+$mobile-width: 550px;
+
+.toolbar-box {
+    .toolbar-box_right {
+        width: 100%;
+        @media screen and (max-width: $mobile-width) {
+            button {
+                font-size: 12px !important;
+            }
+        }
+    }
+}

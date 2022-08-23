@@ -1,0 +1,19 @@
+.dropdown-file{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    button{
+        height: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .dropdown-file_menu_icon {
+        color: #666;
+    }
+
+    .dropdown-file_menu_icon span{
+        font-size: 14px;
+    }
+}

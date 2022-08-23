@@ -1,0 +1,19 @@
+$mobile-width: 550px;
+
+.loading-file {
+    margin: auto;
+    text-align: center;
+    width: 180px;
+    height: 200px;
+    cursor: pointer;
+    background: white;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    position: relative;
+    
+
+    @media screen and (max-width: $mobile-width) {
+        width: 160px;
+        height: 180px;
+    }
+}
